@@ -13,10 +13,10 @@ A tool for analyzing and visualizing Command Query Responsibility Segregation (C
 
 ```bash
 # Global installation
-npm install -g cqrs-analyzer
+npm install -g nestjs-cqrs-analyzer
 
 # Or as a development dependency
-npm install --save-dev cqrs-analyzer
+npm install --save-dev nestjs-cqrs-analyzer
 ```
 
 ## Usage
@@ -25,16 +25,16 @@ npm install --save-dev cqrs-analyzer
 
 ```bash
 # Basic usage
-cqrs-analyzer
+nestjs-cqrs-analyzer
 
 # Specify source and output directories
-cqrs-analyzer --src src/modules --out ./cqrs-report
+nestjs-cqrs-analyzer --src src/modules --out ./cqrs-report
 
 # Limit the number of edges in diagrams
-cqrs-analyzer --max-edges 200
+nestjs-cqrs-analyzer --max-edges 200
 
 # Specify diagram formats
-cqrs-analyzer --formats mermaid,html
+nestjs-cqrs-analyzer --formats mermaid,html
 ```
 
 ### Options
@@ -48,7 +48,7 @@ cqrs-analyzer --formats mermaid,html
 ### Programmatic API
 
 ```typescript
-import { CQRSAnalyzer } from 'cqrs-analyzer';
+import { CQRSAnalyzer } from 'nestjs-cqrs-analyzer';
 
 async function analyzeApp() {
   const analyzer = new CQRSAnalyzer({

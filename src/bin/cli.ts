@@ -17,7 +17,7 @@ try {
 const program = new Command();
 
 program
-    .name('cqrs-analyzer')
+    .name('nestjs-cqrs-analyzer')
     .description('Analyze CQRS architecture in TypeScript/NestJS applications')
     .version(version);
 
