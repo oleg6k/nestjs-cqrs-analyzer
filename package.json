@@ -1,0 +1,63 @@
+{
+  "name": "nestjs-cqrs-analyzer",
+  "version": "1.0.0",
+  "description": "A tool for analyzing CQRS architectures in TypeScript/NestJS applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cqrs-analyzer": "./dist/bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "start": "ts-node src/bin/cli.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "cqrs",
+    "architecture",
+    "analysis",
+    "nestjs",
+    "typescript",
+    "visualization",
+    "diagram",
+    "mermaid"
+  ],
+  "author": "oleg6k@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleg6k/nestjs-cqrs-analyzer"
+  },
+  "bugs": {
+    "url": "https://github.com/oleg6k/nestjs-cqrs-analyzer/issues"
+  },
+  "homepage": "https://github.com/oleg6k/nestjs-cqrs-analyzer#readme",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "fs-extra": "^11.1.1",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
+  ]
+}
